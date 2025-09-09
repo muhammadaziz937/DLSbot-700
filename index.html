@@ -14,12 +14,6 @@
       <button onclick="sendMessage()">Yubor</button>
     </div>
   </div>
-  <div class="history">
-    <h3>📂 Suhbatlar</h3>
-    <div class="history-list" id="historyList"></div>
-    <button class="add-btn" onclick="newChat()">➕ Yangi suhbat</button>
-  </div>
-
   <script>
     const input = document.getElementById("input");
     const messagesDiv = document.getElementById("messages");
@@ -62,14 +56,13 @@
       let reply = "Bu savol DLS 25 ga oid emas.";
       if (text.includes("salom")) reply = "Salom! DLS 25 bo‘yicha qanday yordam kerak?";
       else if (text.includes("isming")) reply = "Mening ismim DLS Bot 700.";
-      else if (text.includes("eng yaxshi")) reply = "DLS 25 da eng yaxshi futbolchilar: Mbappé, Haaland, Messi.";
+      else if (text.includes("eng yaxshi")) reply = "DLS 25 da eng yaxshi futbolchilar: Mbappé, Haaland, Vinicius, Salah va Rodri.";
       else if (text.includes("transfer")) reply = "Transfer qilish uchun coins kerak bo‘ladi.";
-      else if (text.includes("stadion")) reply = "Stadionni yangilash jamoa darajasini oshiradi.";
+      else if (text.includes("stadion")) reply = "Stadionni kuchaytirish jamoa darajasini oshiradi.";
       else if (text.includes("taktika")) reply = "Eng mashhur taktika 4-3-3 va 4-2-3-1.";
       else if (text.includes("coins")) reply = "Coinslarni yutib olish yoki sotib olish mumkin.";
       else if (text.includes("multiplayer")) reply = "Multiplayerda do‘stlaring bilan o‘ynash mumkin.";
       else if (text.includes("forma")) reply = "Formani sozlash uchun “Edit Kit” bo‘limiga kirasiz.";
-      else if (text.includes("murabbiy")) reply = "Murabbiy jamoa kuchini oshiradi.";
       else if (text.includes("update")) reply = "So‘nggi yangilanishda grafika va transfer tizimi yaxshilandi.";
       else if (text.includes("dls 25")) reply = "DLS 25 — Dream League Soccer’ning eng so‘nggi versiyasi.";
 
